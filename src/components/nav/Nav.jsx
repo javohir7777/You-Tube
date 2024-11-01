@@ -16,19 +16,19 @@ const Nav = ({ isClosed, toggleMode }) => {
             <NavLink to={"/"}>
               {/* <Icon className="icons" icon="uil:home-alt" /> */}
               <i className="uil uil-estate"></i>
-              <span className="link-name">Dashbord</span>
+              <span className="link-name">Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink>
               <i className="uil uil-files-landscapes"></i>
-              <span className="link-name">Content</span>
+              <span className="link-name">Shorts</span>
             </NavLink>
           </li>
           <li>
             <NavLink>
               <i className="uil uil-chart"></i>
-              <span className="link-name">Analytics</span>
+              <span className="link-name">Subscriptions</span>
             </NavLink>
           </li>
           <li>

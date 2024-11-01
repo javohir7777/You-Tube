@@ -33,6 +33,7 @@ nav.close ~ section .row {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+  color: var(--text-color);
 }
 .card-text__flex {
   display: flex;
@@ -45,6 +46,7 @@ nav.close ~ section .row {
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
+  color: var(--text-color);
 }
 @media (max-width: 1270px) {
   nav {

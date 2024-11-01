@@ -2,6 +2,7 @@ import Cards from "../../components/cards/Cards";
 import { requies } from "../../server";
 import { useEffect, useState } from "react";
 import "./Home.css";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const [getVideo, setGetVideo] = useState([]);
@@ -15,7 +16,7 @@ const Home = () => {
       const { data } = await requies.get("search");
       setGetVideo(data?.items);
     } catch (error) {
-      console.log(error);
+      toast.error(error);
     }
   };
 

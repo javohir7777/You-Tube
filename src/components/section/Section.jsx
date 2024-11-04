@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Outlet } from "react-router-dom";
+import YouTube from "../../assets/YouTube.png";
 // import "./Section.css";
 
 const Section = ({ toggleSidebar }) => {
@@ -7,6 +8,7 @@ const Section = ({ toggleSidebar }) => {
     <section>
       <div className="top">
         <i className="uil uil-bars sidebar-toggle" onClick={toggleSidebar}></i>
+        <img className="YouTube-Logo" src={YouTube} alt="No YouTube?"/>
         <form className="search-box">
           <i className="uil uil-search"></i>
           <input type="text" placeholder="Search here..." />

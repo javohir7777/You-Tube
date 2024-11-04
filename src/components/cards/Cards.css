@@ -72,6 +72,15 @@ nav.close ~ section .row {
   nav ~ section .row {
     grid-template-columns: repeat(3, auto);
   }
+  .sidebar-toggle {
+    display: none;
+  }
+  .YouTube-Logo {
+    display: block;
+  }
+  .youTubeSmall {
+    display: none;
+  }
 }
 @media (max-width: 1081px) {
   body section .dash-content .row {

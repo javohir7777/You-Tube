@@ -9,6 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
+  --primary-body: #fff;
   --primary-color: #0e4bf1;
   --panel-color: #fff;
   --text-color: #000;
@@ -24,6 +25,7 @@
   --tran-03: all 0.2s ease;
 }
 body.dark {
+  --primary-body: #3a3b3c;
   --primary-color: #3a3b3c;
   --panel-color: #242526;
   --text-color: #ccc;
@@ -37,7 +39,7 @@ body.dark {
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--primary-body);
 }
 
 ::-webkit-scrollbar {
@@ -67,6 +69,10 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+/* nav */
+.hamburger {
+  display: none;
 }
 
 nav {
@@ -149,6 +155,10 @@ section {
   font-size: 26px;
   color: var(--text-color);
   cursor: pointer;
+}
+.YouTube-Logo {
+  width: 100px;
+  display: none;
 }
 .search-box {
   position: relative;
@@ -234,6 +244,15 @@ nav.close ~ section {
 .dark .switch {
   transform: translateX(15px);
 }
+
+@media (max-width: 1270px) {
+  /* nav */
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    padding: 4px 9px 0;
+  }
+}
 @media (max-width: 550px) {
   nav {
     display: none;
@@ -252,5 +271,14 @@ nav.close ~ section {
   }
   nav.close ~ section {
     width: 100%;
+  }
+  .sidebar-toggle {
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .search-box {
+    margin: 0 0 0 30px;
   }
 }

@@ -7,7 +7,8 @@ const Nav = ({ isClosed, toggleMode }) => {
   return (
     <nav className={`sidebar ${isClosed ? "close" : ""}`}>
       <div className="nav-brand">
-        <img className="avatar" src={YouTube} alt="YouTube - ?" />
+        <img className="avatar youTubeSmall" src={YouTube} alt="YouTube - ?" />
+        <i className="uil uil-bars hamburger"></i>
         <span className="brand-name">YouTube</span>
       </div>
       <div className="nav-menus">
